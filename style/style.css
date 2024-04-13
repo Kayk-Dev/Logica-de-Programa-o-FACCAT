@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .header {
+    background-color: #6a5acd; /* Cor de fundo atualizada */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+  }
+  
+  .header:hover {
+    background-color: #7d70d7; /* Cor de fundo alterada ao passar o mouse */
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Adicionando animação aos links do cabeçalho */
+  .animar:hover {
+    animation: pulse 0.5s ease infinite alternate;
+  }
+  
+  /* Estilos para o menu de hambúrguer */
+  .hamburger-menu {
+    display: none; /* Inicialmente oculto */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .menu {
+      flex-direction: column;
+    }
+    
+    .menu-list {
+      display: flex; /* Exibir o menu em dispositivos móveis */
+      justify-content: center; /* Justificar itens do menu em dispositivos móveis */
+    }
+    
+    .menu-list.active {
+      display: none; /* Ocultar o menu em dispositivos móveis quando o menu de hambúrguer estiver ativo */
+    }
+    
+    .hamburger-menu {
+      display: flex; /* Exibir o menu de hambúrguer em dispositivos móveis */
+    }
+  }
+
+h2 {
+    text-align: center; 
+    margin-top: 20px;
+    color: #fff; 
+  }
+
+.bg{
+    background-color: #9370DB;
+}
+
+.botoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .botao1 {
+    background-color: #ffffff; 
+    color: #000000; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    transition: background-color 0.3s; 
+    flex-basis: calc(33.33% - 10px); / 
+  }
+  
+  .botao1:hover {
+    background-color: #CCCCCC; /* Mudar cor ao passar o mouse */
+  }
+  
+  /* Adiciona margem à direita nos botões, exceto no último de cada linha */
+  .botao1:nth-child(3n) {
+    margin-right: 0;
+  }
