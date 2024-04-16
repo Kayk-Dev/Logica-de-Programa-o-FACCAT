@@ -21,3 +21,10 @@ function areaRetangulo(){
     let area = base * altura
     alert("A area do seu retangulo é: " + area)
 }
+
+function areaCirculo(){
+    let raio = parseInt(prompt("Digite o raio do seu circulo: "))
+
+    let area = Math.PI * ((raio)*)
+    alert("A area do seu retangulo é: " + area)
+}
