@@ -116,6 +116,12 @@ h2 {
     margin-top: 20px;
     color: #fff; 
   }
+  
+h3 {
+    text-align: center; 
+    margin-top: 20px;
+    color: #fff; 
+  }
 
 .bg{
     background-color: #9370DB;
